@@ -1,1 +1,97 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="25" inline="false" x="54" y="67">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="40">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="multimedia_stopupdate" id="62">
+        <next>
+          <block type="oled_cleardisplay" id="78">
+            <next>
+              <block type="oled_setcursor" id="113" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="120">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="121">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawtext" id="160">
+                    <field name="TEXT">Far</field>
+                    <next>
+                      <block type="oled_drawnumber" id="169" inline="true">
+                        <value name="NUMBER">
+                          <block type="logic_compare" id="199" inline="true">
+                            <field name="OP">LT</field>
+                            <value name="A">
+                              <block type="sensor_object" id="213">
+                                <field name="OBJECT">LEFTFRONT</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="200">
+                                <field name="NUM">80</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="oled_setcursor" id="214" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="215">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="216">
+                                <field name="NUM">20</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_drawtext" id="221">
+                                <field name="TEXT">Close</field>
+                                <next>
+                                  <block type="oled_drawnumber" id="217" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="logic_compare" id="218" inline="true">
+                                        <field name="OP">LT</field>
+                                        <value name="A">
+                                          <block type="sensor_object" id="219">
+                                            <field name="OBJECT">LEFTFRONT</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="220">
+                                            <field name="NUM">40</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="multimedia_doupdate" id="69"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
