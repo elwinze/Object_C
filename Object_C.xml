@@ -24,7 +24,7 @@
                 </value>
                 <next>
                   <block type="oled_drawtext" id="160">
-                    <field name="TEXT">Far</field>
+                    <field name="TEXT">Far=</field>
                     <next>
                       <block type="oled_drawnumber" id="169" inline="true">
                         <value name="NUMBER">
@@ -56,7 +56,7 @@
                             </value>
                             <next>
                               <block type="oled_drawtext" id="221">
-                                <field name="TEXT">Close</field>
+                                <field name="TEXT">Close=</field>
                                 <next>
                                   <block type="oled_drawnumber" id="217" inline="true">
                                     <value name="NUMBER">
@@ -110,7 +110,7 @@
                                                     </value>
                                                     <next>
                                                       <block type="oled_drawtext" id="274">
-                                                        <field name="TEXT">Far</field>
+                                                        <field name="TEXT">Far=</field>
                                                         <next>
                                                           <block type="oled_drawnumber" id="275" inline="true">
                                                             <value name="NUMBER">
@@ -142,7 +142,7 @@
                                                                 </value>
                                                                 <next>
                                                                   <block type="oled_drawtext" id="282">
-                                                                    <field name="TEXT">Close</field>
+                                                                    <field name="TEXT">Close=</field>
                                                                     <next>
                                                                       <block type="oled_drawnumber" id="283" inline="true">
                                                                         <value name="NUMBER">
