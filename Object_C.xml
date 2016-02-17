@@ -100,7 +100,7 @@
                                                   <block type="oled_setcursor" id="271" inline="true">
                                                     <value name="STARTX">
                                                       <block type="math_number" id="272">
-                                                        <field name="NUM">50</field>
+                                                        <field name="NUM">60</field>
                                                       </block>
                                                     </value>
                                                     <value name="STARTY">
@@ -132,7 +132,7 @@
                                                               <block type="oled_setcursor" id="279" inline="true">
                                                                 <value name="STARTX">
                                                                   <block type="math_number" id="280">
-                                                                    <field name="NUM">50</field>
+                                                                    <field name="NUM">60</field>
                                                                   </block>
                                                                 </value>
                                                                 <value name="STARTY">
@@ -164,7 +164,7 @@
                                                                           <block type="oled_setcursor" id="287" inline="true">
                                                                             <value name="STARTX">
                                                                               <block type="math_number" id="288">
-                                                                                <field name="NUM">50</field>
+                                                                                <field name="NUM">60</field>
                                                                               </block>
                                                                             </value>
                                                                             <value name="STARTY">
