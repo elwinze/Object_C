@@ -37,7 +37,7 @@
                             </value>
                             <value name="B">
                               <block type="math_number" id="200">
-                                <field name="NUM">80</field>
+                                <field name="NUM">90</field>
                               </block>
                             </value>
                           </block>
@@ -69,13 +69,41 @@
                                         </value>
                                         <value name="B">
                                           <block type="math_number" id="220">
-                                            <field name="NUM">20</field>
+                                            <field name="NUM">30</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="multimedia_doupdate" id="69"></block>
+                                      <block type="oled_setcursor" id="230" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="231">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="232">
+                                            <field name="NUM">30</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="oled_drawtext" id="233">
+                                            <field name="TEXT"></field>
+                                            <next>
+                                              <block type="oled_drawnumber" id="234" inline="true">
+                                                <value name="NUMBER">
+                                                  <block type="sensor_light" id="266">
+                                                    <field name="LIGHT">LEFT</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="multimedia_doupdate" id="69"></block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
